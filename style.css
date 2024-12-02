@@ -1,0 +1,104 @@
+html, body{
+ height:100%;
+ width:228%;
+}
+
+body{
+ display:flex;
+ justify-content: center;
+ text-align: center;
+ background-color: #0e1331;
+ font-size:1px;
+ color:#f56dc3;
+}
+
+.box{
+ display:flex;
+ flex-direction: column;
+ align-items:center;
+ justify-content:center;
+ height:100%;
+}
+
+.heart{
+ position:relative;
+ width:100px;
+ height:90px;
+ margin:0 auto;
+ cursor: hidden;
+ transition: 1s ease-in-out;
+}
+
+.heart:before,
+.heart:after{
+ position: absolute;
+ content:'';
+ left:50px;
+ top:0vh;
+ width:50px;
+ height:80px;
+ background-color: #f56dc3;
+ border-radius:50px 50px 0 0;
+ transform: rotate(-45deg);
+ transform-origin: 0 100%;
+}
+
+.heart:after{
+ position:absolute;
+ content:'';
+ left:0px;
+ transform: rotate(45deg);
+ transform-origin: 100% 100%;
+}
+
+
+
+#add_button{
+ display:flex;
+ justify-content:center;
+ align-items: center;
+ position:relative;
+ width:30px;
+ height:30px;
+ font-size:10px;
+ line-height: 0;
+ border-radius: 50%;
+ border:none;
+ transition: all 0.5s ease-out;
+ top:46vh;
+ left:-65px;
+ color:#f56dc3;
+ background-color: #f56dc3;
+ z-index:2;
+}
+
+#add_button::after{
+ content:'Ba2oussiiiiiiii 😝 I love you Soo muchh albeee and I really miss youuu, you are theee besttt thing that happened to me thisss year . You are the kindest person on earth, the funniest and the most gorgeous boyyy . Always remember that I am here for you🫀🫶';
+ position: absolute;
+ inset:0;
+ background-color: #0e1331;
+ border-radius:inherit;
+ font-size:15px;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ transition: opacity 0.5s ease-out;
+ text-wrap:nowrap;
+ opacity: 0;
+ z-index:2; 
+ 
+}
+
+#add_button:hover{
+ border-radius:50px;
+ width:250pc;
+ z-index:2;
+ overflow-x: size(100px);
+ background-color: #0e1331;
+}
+
+#add_button:hover::after{
+opacity: 1;
+z-index:2;
+background-color: #0e1331;
+}
